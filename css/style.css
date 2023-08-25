@@ -209,9 +209,9 @@ background-color: #f8f1ff;
 }
 
 
-.modal-memory-input > span {
+.modal-memory > span {
  /* display: inline-block; */
-  width: 122px;
+  /* width: 122px; */
 height: 12px;
 font-family: 'Helvetica Neue', sans-serif;
 }
