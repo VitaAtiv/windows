@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window</title>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+                
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="./css/resept.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    
+    <div class="back-modal" data-modal>
+      <div class="modal">
+        <div class="modal-selection">
+          <button class="modal-selection-btn" type="button">Вхід</button>
+          <button class="modal-selection-btn" type="button">Реєстрація</button>
+        </div>
+        <label class="modal-label email">
+          <span>E-mail</span>
+          <input class="modal-input" type="email" placeholder="ativ181@gmail.com">
+          <svg class="modal-input-icon email">
+            <use href="./img/icons.svg#icon-email"></use>
+          </svg>
+        </label>
+        <label class="modal-label password">
+          <span>Password</span>
+          <input class="modal-input" type="password" placeholder="12345678">
+          <svg class="modal-input-icon password">
+            <use href="./img/icons.svg#icon-password"></use>
+          </svg>
+        </label>
+
+        <label class="modal-memory">
+          <input class="modal-memory-input" type="checkbox">
+          <span>Запам'ятати мене</span>
+        </label>  
+
+        <button class="modal-selection-btn-input" type="button">Увійти</button>
+
+        <label class="modal-selection-btn-pass">
+          
+          <input class="modal-selection-btn-pass-input" type="email">
+          <p>Забули пароль?</p>
+        </label>
+
+
+        <!-- <button class="modal-selection-btn-pass" type="button">Забули пароль?</button> -->
+       
+        <button class="modal-selection-btn-google" type="button">Продовжити з Google</button>
+      </div>
+    </div>
+   
+
+    <script src="./index.js"></script>
+  </body>
+</html>
