@@ -23,7 +23,43 @@
   </head>
   <body>
     <button class="btn-open" type="button" data-modal-open>Open Modal</button>
-    <div class="back-modal" data-modal>
+    <form class="box">
+      <label class="box-policy">
+        <input class="input-policy" type="checkbox">
+        <span></span>
+        <svg class="input-policy-icon">
+          <use href="./img/plus.svg#icon-plus"></use>
+        </svg>
+        Agree
+      </label>
+      <input class="input-level" type="checkbox">
+      <input class="input-level" type="checkbox">
+      <input class="input-level" type="checkbox">
+      <br>
+      <label for="age">Age</label>
+      <input id="age" class="input-age" type="number" min="1" max="150" required>
+      <br>
+      <label for="age">Age</label>
+      <input id="age" class="input-age" type="range" min="1" max="150">
+    <br>
+    <label for="name">Name</label>
+      <input id="name" class="input-name" type="text" minlength="6" maxlength="8" required>
+      <br>
+      <label>
+        <input type="radio" name="level" value="1">
+        1
+      </label>
+      <label>
+        <input type="radio" name="level" value="2">
+        2
+      </label>
+      <label>
+        <input type="radio" name="level" value="3">
+        3
+      </label>
+      <button type="submit">Send</button>
+    </form>
+    <div class="back-modal is-hidden" data-modal>
       <div class="modal">
         <button class="btn-close" type="button" data-modal-close>X</button>
         <div class="modal-selection">

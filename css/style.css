@@ -12,8 +12,96 @@
     overflow: hidden;
   } 
    */
+
+
+   .box {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 500px;
+    border: 1px solid #000;
+  }
+
+  .box-policy {
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .input-policy {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .input-policy ~ .input-policy-icon {
+    opacity: 1;
+   
+      }
+
+  .input-policy-icon {
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    fill: #fff;
+  }
+
+  .input-policy + span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 4px;
+
+  }
+
+
+  
+  .input-policy:checked + span {
+    background-color:  #985ACE;
+    
+  }
+
+  .input-level {
+    outline: 1px solid #000;
+    outline-offset: 2px;
+  }
+
+ .input-age {
+  outline: none;
+}
+
+
+.input-age:in-range {
+  border: 1px solid #00ff08;
+}
+
+
+
+  .input-age:out-of-range {
+    border: 1px solid #ff0000;
+  }
+
+  .input-name {
+    width: 100%;
+  }
+
+  .input-name:valid {
+    border: 1px solid #00ff08;
+  }
+
+  .input-name:invalid {
+    border: 1px solid #ff0000;
+  }
+
    .btn-open {
-    margin: 20px 0 0 50px;
+    margin: 50px 0 0 50px;
     padding: 10px 25px;
     font-weight: 400;
     font-size: 20px;
@@ -21,7 +109,14 @@
     background-color: #985ACE;
     border: transparent;
     border-radius: 30px;
-   
+    cursor: pointer;
+   transition: background-color 300ms ease-in;
+}
+
+
+
+.btn-open:disabled {
+  background-color: #d7c4e8;
 }
 
 button {
